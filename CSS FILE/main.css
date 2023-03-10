@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+
+    scroll-behavior: smooth;
+    font-family: roboto;
+    color: #C5C5D6;
+    height: 200%;
+    /* background-color: #040416; */
+    background: white;
+}
+
+SECTION {
+    background-color: #040416;
+
+}
+
+/* -------------------header start----------- */
+
+header {
+    width: 100% !important;
+    height: 6rem;
+    position: fixed;
+    background-color: #040416;
+    z-index: 4;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    padding: .1rem 6rem;
+    justify-content: space-between;
+}
+
+header div a img {
+    width: 9rem;
+}
+
+header div nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div nav a {
+    padding: 2.5rem;
+    color: #C5C5D6;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header div nav .home {
+    background-color: #070B6B;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+}
+
+header div nav .other::after {
+    content: '';
+    display: block;
+    background: white;
+    width: 0%;
+    height: 2px;
+    margin: auto;
+}
+
+header div nav .other:hover::after {
+    width: 100%;
+    transition-duration: 1.3s;
+}
+
+header div span {
+    display: flex;
+}
+
+header div span input {
+    position: absolute;
+    right: 3rem;
+    bottom: 1.8rem;
+    width: 30px;
+    height: 30px;
+    
+}
+header div span label{
+    
+}
+
+
+
+
+
+
+
+@media (max-width:1024px) {
+    header div {
+        padding: .1rem 3rem;
+    }
+
+    header div a img {
+        width: 8rem;
+    }
+
+    header div nav a {
+        padding: 2rem;
+        font-size: 18.5px;
+    }
+
+    header div nav .home {
+        background-color: #070B6B;
+        padding: .8rem 1.8rem;
+        border-radius: 4px;
+    }
+
+}
+
+@media (max-width:850px) {
+
+    header div a img {
+        padding-top: 15px;
+    }
+
+    header div nav {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: red;
+        top: 96px;
+        display: block;
+        text-align: center;
+        left: 0%;
+        transition: all 0.4s ease-in-out;
+
+    }
+
+    header div nav a {
+        display: block;
+        background: none;
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 23px;
+        color: wheat;
+        transition: color 1s ease;
+    }
+
+    header div nav a:hover {
+        color: white;
+    }
+
+    header div nav .home {
+        background: none;
+        padding: 1rem 2rem;
+        border-radius: 4px;
+    }
+
+    header div nav .other::after {
+        content: '';
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------- hero section---------------- */
+header+section {
+    height: 95vh;
+    /* background-image: linear-gradient(rgba(12, 12, 14, 0.7), rgba(1, 4, 15, 0.7)), url(/Media/BACKGROUND_IMAGE.JPG); */
+    background-image: linear-gradient(rgba(12, 12, 14, 0.8), rgba(1, 4, 15, 0.8)), url(/Media/BACKGROUND_IMAGE.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 2rem;
+    padding: 7em 6em;
+}
+
+header+section div {
+    display: inline;
+}
+
+header+section div h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+header+section div h2 span {
+    color: rgb(247, 97, 43);
+}
+
+header+section div p {
+    font-size: 1.8rem;
+    margin-bottom: 1.1rem;
+}
+
+header+section div button {
+    background-color: #070B6B;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    border: none;
+}
+
+header+section div button a {
+    text-decoration: none;
+    color: #C5C5D6;
+    font-size: 17px;
+    font-family: roboto;
+}
+
+header+section div .sec {
+    margin: 0 8px;
+}
+
+/* --------------------------second section------------- */
+header+section+section {
+    display: block;
+    background-color: white;
+    height: 40vh;
+    z-index: 1;
+    width: 100%;
+}
+
+header+section+section div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    width: 90%;
+    margin-left: 4rem;
+}
+
+header+section+section div div {
+    position: relative;
+    display: block;
+    /* padding: 2em 4em; */
+    /* width: 80%; */
+}
+
+header+section+section div .here {
+    height: 80%;
+    border: 3px solid #070B6B;
+    margin: 1em 2em;
+    width: 60%;
+    /* height: 40%; */
+    padding: .6em 3em;
+    border-radius: 12px;
+    position: relative;
+    bottom: 5rem;
+
+}
+
+header+section+section div .here h3 {
+    margin-bottom: .8em;
+    color: white;
+    font-size: 22px;
+}
+
+header+section+section div .here p {
+    margin-bottom: 1em;
+    color: black;
+}
+
+header+section+section div .here button {
+    background-color: #070B6B;
+    padding: .8rem 1.7rem;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+header+section+section div .here button a {
+    text-decoration: none;
+    color: #C5C5D6;
+    font-size: 15px;
+    font-family: roboto;
+}
+
+header+section+section div .lastguy {
+    position: relative;
+    width: 100%;
+    bottom: 3rem;
+}
+
+header+section+section div #gain {
+    border: 3px solid orangered;
+}
+
+header+section+section div #gain button {
+    background-color: orangered;
+}
